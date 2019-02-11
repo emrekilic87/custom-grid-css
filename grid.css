@@ -1,0 +1,146 @@
+/*grid css*/
+
+.grid-1{
+    width:99.99999%
+    
+}
+.grid-2{
+    width:49.99999%
+    
+}
+.grid-3{
+    width:33.33333%
+}
+.grid-4{
+    width:24.99999%
+}
+.grid-5{
+    width:19.99999%
+}
+.grid-6{
+    width:16.666666%
+}
+.grid-7{
+    width:14.25570%
+}
+.grid-8{
+    width:12.49999%
+}
+.grid-9{
+    width:11.11110%
+}
+.grid-10{
+    width:9.99999%
+}
+.grid-11{
+    width:9.09089%
+}
+.grid-12{
+    width:8.33332%
+}
+
+
+@media screen and (max-width: 1024px){
+    .grid-7,
+    .grid-8,
+    .grid-9,
+    .grid-10,
+    .grid-11,
+    .grid-12{
+        width:24.99999%
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .grid-3{
+        width:99.99999%
+    }
+    .grid-4{
+        width:49.99999%
+    }
+    .grid-5,
+    .grid-6,
+    .grid-7,    
+    .grid-9,
+    .grid-10,
+    .grid-11,
+    {
+        width:33.33333%
+    }
+
+    .grid-8,
+    .grid-12{
+        width:24.99999%
+    }
+
+    .grid.right{
+        float: right;
+    }
+    .grid.left{
+        float: left;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5{
+        width:99.99999%
+    }
+    .grid-6,
+    .grid-7,
+    .grid-8,
+    .grid-9,
+    .grid-10,
+    .grid-11,
+    .grid-12 {
+        width:49.99999%
+    }
+    
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position:relative;
+}
+
+.gridArea {
+  display: block; 
+  font-size: 0;
+}
+.grid {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.grid.top{
+    display: inline-block;
+    vertical-align:top;
+}
+
+.grid.bottom{
+    display: inline-block;
+    vertical-align:bottom;
+}
+
+.grid-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.gridArea.gutters > [class *=grid] {
+    box-sizing: border-box;
+    padding: 0em 0.4em;
+}
+
+.clear{
+    clear: both
+}
